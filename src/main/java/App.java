@@ -11,10 +11,11 @@ public class App {
 
         HelloWorld bean2 =
                 (HelloWorld) applicationContext.getBean("helloworld");
-        System.out.println(bean==bean2);
+        System.out.println(bean == bean2);
 
         Cat beanCat = (Cat) applicationContext.getBean("cat");
         Cat beanCat2 = (Cat) applicationContext.getBean("cat");
-        System.out.println(beanCat==beanCat2);
+
+        System.out.println(beanCat == beanCat2);
     }
 }
